@@ -1,0 +1,277 @@
+//!layout--------------------------------
+//aca ponemos lo que conforma el main de todos los documentos
+
+.hero {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    background-position: center;
+    background-image: url("../img/workteam.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+
+    div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.475);
+
+        div {
+            h1 {
+                font-family: 'Mulish', sans-serif;
+                font-size: 55px;
+                font-weight: 900;
+                color: #ff6542e1;
+            }
+
+            h2 {
+                font-size: 40px;
+                font-weight: 400;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+                padding: 0px 0px 15px 0px;
+            }
+
+            button {
+                width: max-content;
+                font-weight: 400;
+                padding: 10px 15px;
+                font-size: 14px;
+                background-color: #FF6542;
+                color: white;
+                border: none;
+                box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
+                -webkit-box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
+                -moz-box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
+
+                &:hover {
+                    background-color: #ffc759;
+                    color: #ff6542;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+//!SERVICIOS-------------------------------------
+.servicios {
+    width: 100%;
+    height: 120%;
+    background-color: #fbfbfb;
+    color: black;
+    padding: 5px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1/2fr 1fr 1fr;
+    gap: 20px;
+
+    .tituloServicios {
+        grid-column: 2/11;
+        grid-row: 1;
+        //h2 
+        font-size: 40px;
+        font-weight: 900;
+        padding: 20px;
+        background-color: #fbfbfb;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*--Diseño de los cuadros--*/
+    div {
+        padding: 25px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.32);
+        -webkit-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.32);
+        -moz-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.32);
+
+        &:hover {
+            background-color: #ffc859aa;
+        }
+
+        img {
+            width: 90px;
+            height: 90px;
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 200;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: max-content;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            background-color: #ff6542de;
+            color: white;
+            border: none;
+
+            &:hover {
+                background-color: #607196;
+                color: black;
+                font-weight: 600;
+            }
+        }
+    }
+
+    //GRID
+    .servicio1 {
+        grid-column: 2/5;
+        grid-row: 2;
+    }
+
+    .servicio2 {
+        grid-column: 5/8;
+        grid-row: 2;
+    }
+
+    .servicio3 {
+        grid-column: 8/11;
+        grid-row: 2;
+    }
+
+    .servicio4 {
+        grid-column: 2/5;
+        grid-row: 3;
+    }
+
+    .servicio5 {
+        grid-column: 5/8;
+        grid-row: 3;
+    }
+
+    .servicio6 {
+        grid-column: 8/11;
+        grid-row: 3;
+    }
+}
+
+
+//!PRESENTACION-------------------------------------
+.presentacion {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    background-color: #fbfbfb;
+    background-position: center;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 400px);
+
+    .p1 {
+        grid-column: 2/4;
+        grid-row: 2/4;
+        //diseño
+        width: 300px;
+        height: 300px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding: 30px;
+        margin: 10px;
+        background-color: #ff6542e5;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p2 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+        //diseño
+        width: 300px;
+        height: 300px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding: 30px;
+        margin-top: 50px;
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentacionTitulo {
+        grid-column: 5/8;
+        grid-row: 1/6;
+        margin-left: 20px;
+        padding-left: 15px;
+        //flex
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+
+        h2 {
+            font-size: 45px;
+            font-weight: bolder;
+            margin-bottom: 15px;
+        }
+
+        .p3 {
+            font-size: 25px;
+            font-weight: 200;
+            text-align: left;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .p4 {
+            font-size: 25px;
+            font-weight: 200;
+            text-align: left;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        button {
+            width: max-content;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: #ff6542ca;
+            color: white;
+            border: none;
+
+            &:hover {
+                background-color: #ffc759;
+                color: #ff6542;
+                font-weight: 600;
+            }
+        }
+    }
+}
