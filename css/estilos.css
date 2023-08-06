@@ -22,17 +22,19 @@ ul {
 a {
   text-decoration: none; }
 
+.accesoContactos ul, .headerLogo, .servicios .tituloServicios, .experiencias div h2, footer .footerLogo button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
 .accesoContactos ul {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
   background-color: #c5c5c5;
-  border-color: #c5c5c5;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  border-color: #c5c5c5; }
   .accesoContactos ul li button {
     width: max-content;
     padding: 5px 10px 5px 10px;
@@ -67,12 +69,6 @@ header nav {
 
 .headerBarra {
   grid-column: 2/3; }
-
-.headerLogo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
 
 /*Elimino el margin y padding que hereda desde Bootstrap*/
 .headerBarra ul {
@@ -145,9 +141,9 @@ div ul {
     background-color: rgba(0, 0, 0, 0.475); }
     .hero div div h1 {
       font-family: 'Mulish', sans-serif;
-      font-size: 55px;
+      font-size: 48px;
       font-weight: 900;
-      color: #ff6542e1; }
+      color: #ff6542; }
     .hero div div h2 {
       font-size: 40px;
       font-weight: 400;
@@ -193,7 +189,7 @@ div ul {
     text-align: left;
     padding: 30px;
     margin: 10px;
-    background-color: #ff6542e5;
+    background-color: #ff6542;
     color: white;
     display: flex;
     flex-direction: column;
@@ -246,7 +242,7 @@ div ul {
       margin-top: 10px;
       font-size: 14px;
       font-weight: 600;
-      background-color: #ff6542ca;
+      background-color: #ff6542;
       color: white;
       border: none; }
       .presentacion .presentacionTitulo button:hover {
@@ -273,11 +269,7 @@ div ul {
     font-weight: 900;
     padding: 20px;
     background-color: #fbfbfb;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
+    text-align: center; }
   .servicios div {
     padding: 25px;
     background-color: white;
@@ -339,11 +331,7 @@ div ul {
     font-size: 35px;
     font-weight: 900;
     background-color: #fbfbfb;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
+    text-align: center; }
   .experiencias div .carousel-inner {
     width: 100%;
     height: 100%; }
@@ -384,7 +372,8 @@ div ul {
         margin: 0px;
         display: flex;
         flex-direction: column;
-        justify-content: start; }
+        justify-content: start;
+        align-items: center; }
         .formulario .cuerpoformulario form ul li {
           width: 50%; }
           .formulario .cuerpoformulario form ul li div input {
@@ -453,10 +442,6 @@ footer {
       background-color: #c5c5c500;
       color: white;
       border: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
       /*Icono seguinos*/ }
       footer .footerLogo button a {
         text-decoration: none;

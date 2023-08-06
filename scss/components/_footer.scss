@@ -24,10 +24,7 @@ footer {
             background-color: #c5c5c500;
             color: white;
             border: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            @extend %flex;
 
             a {
                 text-decoration: none;

@@ -23,10 +23,7 @@ header nav {
 }
 
 .headerLogo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
 }
 
 /*Elimino el margin y padding que hereda desde Bootstrap*/
@@ -80,9 +77,9 @@ div {
             padding: 10px 15px 10px 15px;
             font-size: 16px;
             font-weight: 900;
-            background-color: $color-primario;
-            color: white;
-            border: none;
+            background-color: map-get($boton, bg-boton);
+            color: map-get($boton, color-text);
+            border: map-get($boton, border);
             margin-left: 5px;
             box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
             -webkit-box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
