@@ -17,100 +17,111 @@
     .header {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 0.5fr;
-    }
 
-    .headerBarra {
-        grid-column: span 3;
-        grid-row: 2;
-    }
+        .headerLogo {
+            grid-column: 2;
+            grid-row: 1;
+        }
 
-    .headerLogo {
-        grid-column: 2;
-        grid-row: 1;
-    }
+        .headerBarra {
+            grid-column: span 3;
+            grid-row: 2;
 
-    header nav ul li a {
-        font-size: 10px;
-        font-weight: 600;
-    }
+            ul {
+                li {
+                    a {
+                        font-size: 10px;
+                        font-weight: 600;
 
-    .inicio {
-        color: #FF6542;
-        font-size: 11px;
-        font-weight: 600;
+                        .resaltador {
+                            color: $color-primario;
+                            font-size: 11px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-@media screen and (max-width:450px) {
+
+@media screen and (max-width:550px) {
     .header {
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: 1fr;
-    }
 
-    .headerBarra {
-        grid-column: span 3;
-        grid-row: 2;
-        padding: 10px;
-    }
+        .headerLogo {
+            grid-column: 2;
+            grid-row: 1;
+        }
 
-    .headerLogo {
-        grid-column: 2;
-        grid-row: 1;
-    }
+        .headerBarra {
+            grid-column: span 3;
+            grid-row: 2;
+            padding: 10px;
 
-    header nav ul li a {
-        font-size: 9px;
-        font-weight: 600;
-    }
+            ul {
+                li {
+                    a {
+                        font-size: 9px;
+                        font-weight: 600;
 
-    .inicio {
-        color: #FF6542;
-        font-size: 10px;
-        font-weight: 600;
-    }
+                        .resaltador {
+                            color: $color-primario;
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+                    }
+                }
 
-    .resaltador {
-        font-size: 10px;
-    }
-
-    header nav ul button {
-        width: max-content;
-        padding: 5px;
-        font-size: 10px;
-        font-weight: 400;
-        margin-left: 0px;
+                button {
+                    width: max-content;
+                    padding: 5px;
+                    font-size: 10px;
+                    font-weight: 400;
+                    margin-left: 0px;
+                }
+            }
+        }
     }
 }
 
 //HERO----------------------------
 @media screen and (max-width:950px) {
-    .hero div h1 {
-        font-size: 40px;
-    }
+    .heroTexto {
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
 
-    .hero div h2 {
-        font-size: 30px;
+        h2 {
+            font-size: 30px;
+            text-align: center;
+        }
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:550px) {
     .hero {
         width: 100%;
         height: 400px;
-    }
 
-    .hero div h1 {
-        font-size: 30px;
-    }
+        .heroTexto {
+            h1 {
+                font-size: 30px;
+            }
 
-    .hero div h2 {
-        font-size: 25px;
-    }
+            h2 {
+                font-size: 25px;
+            }
 
-    .heroTexto button {
-        font-weight: 600;
-        padding: 5px 10px;
-        font-size: 10px;
+            button {
+                font-weight: 600;
+                padding: 5px 10px;
+                font-size: 10px;
+            }
+        }
     }
 }
 
@@ -166,7 +177,7 @@
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:550px) {
     .presentacion {
         grid-template-columns: 1fr;
         grid-template-rows: 0.20fr 0.20fr 1fr;
@@ -218,137 +229,268 @@
     }
 }
 
-    /*PRNINT*/
-    @media print {
-        .presentacion {
-            display: flex;
-            flex-direction: row;
-            justify-content: left;
-            align-items: center;
+/*PRNINT*/
+@media print {
+    .presentacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+}
+
+
+//SERVICIOS----------------
+@media screen and (max-width:950px) {
+    .servicios {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr auto;
+        gap: 10px;
+        padding: 20px;
+
+        .tituloServicios {
+            grid-column: 1/3;
+            grid-row: 1;
+        }
+
+        .servicio1 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .servicio2 {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .servicio3 {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .servicio4 {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        .servicio5 {
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        .servicio6 {
+            grid-column: 2;
+            grid-row: 4;
         }
     }
 
+    .servicios div {
+        padding: 10px;
+    }
 
-    //SERVICIOS----------------
-    @media screen and (max-width:950px) {
-        .servicios {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.5fr auto;
-            gap: 10px;
-            padding: 20px;
+    .servicios div h2 {
+        font-size: 45px;
+        padding: 0px;
+    }
 
-            .tituloServicios {
-                grid-column: 1/3;
-                grid-row: 1;
-            }
+    .servicios div h3 {
+        font-size: 20px;
+        padding: 0px;
+    }
+}
 
-            .servicio1 {
-                grid-column: 1;
-                grid-row: 2;
-            }
+@media screen and (max-width:500px) {
+    .servicios {
+        grid-template-columns: 0.5fr;
+        grid-auto-rows: 1fr;
+        gap: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-            .servicio2 {
-                grid-column: 2;
-                grid-row: 2;
-            }
-
-            .servicio3 {
-                grid-column: 1;
-                grid-row: 3;
-            }
-
-            .servicio4 {
-                grid-column: 2;
-                grid-row: 3;
-            }
-
-            .servicio5 {
-                grid-column: 1;
-                grid-row: 4;
-            }
-
-            .servicio6 {
-                grid-column: 2;
-                grid-row: 4;
-            }
+        .tituloServicios {
+            grid-column: 1;
+            grid-row: 1;
         }
 
-        .servicios div {
-            padding: 10px;
+        /*primera fila de servicios*/
+        .servicio1 {
+            grid-column: 1;
+            grid-row: 2;
         }
 
-        .servicios div h2 {
-            font-size: 45px;
-            padding: 0px;
+        .servicio2 {
+            grid-column: 1;
+            grid-row: 3;
         }
 
-        .servicios div h3 {
+        .servicio3 {
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        /*segunda fila de servicios*/
+        .servicio4 {
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        .servicio5 {
+            grid-column: 1;
+            grid-row: 6;
+        }
+
+        .servicio6 {
+            grid-column: 1;
+            grid-row: 7;
+        }
+    }
+
+    .servicios h2 {
+        font-size: 40px;
+        padding: 5px;
+    }
+
+    .servicios h3 {
+        font-size: 20px;
+    }
+}
+
+@media print {
+    h2 {
+        color: $color-primario;
+    }
+}
+
+
+//EXPERIENCIAS--------------------------------------
+@media screen and (max-width:800px) {
+    .experiencias {
+        DIV {
+            h2 {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .experiencias {
+        DIV {
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+//FORMULARIO----------------------------------------
+@media screen and (max-width:950px) {
+    .formulario {
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
             font-size: 20px;
-            padding: 0px;
         }
-    }
 
-    @media screen and (max-width:500px) {
-        .servicios {
-            grid-template-columns: 0.5fr;
-            grid-auto-rows: 1fr;
-            gap: 10px;
-            padding: 30px;
+        .cuerpoformulario {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            .tituloServicios {
-                grid-column: 1;
-                grid-row: 1;
-            }
+            form {
+                width: 50%;
+                height: 50%;
+                padding: 10px;
 
-            /*primera fila de servicios*/
-            .servicio1 {
-                grid-column: 1;
-                grid-row: 2;
-            }
-
-            .servicio2 {
-                grid-column: 1;
-                grid-row: 3;
-            }
-
-            .servicio3 {
-                grid-column: 1;
-                grid-row: 4;
-            }
-
-            /*segunda fila de servicios*/
-            .servicio4 {
-                grid-column: 1;
-                grid-row: 5;
-            }
-
-            .servicio5 {
-                grid-column: 1;
-                grid-row: 6;
-            }
-
-            .servicio6 {
-                grid-column: 1;
-                grid-row: 7;
+                ul {
+                    li {
+                        div {
+                            input {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
             }
         }
 
-        .servicios h2 {
-            font-size: 40px;
-            padding: 5px;
+        img {
+            display: none;
         }
+    }
+}
 
-        .servicios h3 {
+
+@media screen and (max-width:500px) {
+    .formulario {
+        h2 {
             font-size: 20px;
         }
-    }
 
-    @media print {
-        h2 {
-            color: #FF6542;
+        h3 {
+            font-size: 15px;
+            margin: 0px;
+        }
+
+        .cuerpoformulario {
+
+            form {
+                width: 70%;
+                height: 50%;
+                padding: 5px;
+
+                ul {
+                    li {
+                        div {
+                            input {
+                                font-size: 10px;
+                            }
+
+                            button {
+                                padding: 0px;
+
+                                input {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            img {
+                display: none;
+            }
         }
     }
+}
+
+//BOTON WSP-------------------
+@media screen and (max-width:800px) {
+    .botonWsp {
+        bottom: 10px;
+        right: 10px;
+
+        button {
+            i {
+                font-size: 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .botonWsp {
+        visibility: hidden;
+    }
+}
+@media print {
+    .botonWsp {
+        display: none;
+    }
+}

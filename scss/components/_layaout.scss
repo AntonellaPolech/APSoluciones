@@ -45,7 +45,7 @@
                 font-weight: 400;
                 padding: 10px 15px;
                 font-size: 14px;
-                background-color: #FF6542;
+                background-color: $color-primario;
                 color: white;
                 border: none;
                 box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
@@ -54,9 +54,111 @@
 
                 &:hover {
                     background-color: #ffc759;
-                    color: #ff6542;
+                    color: $color-primario;
                     font-weight: 600;
                 }
+            }
+        }
+    }
+}
+
+//!PRESENTACION-------------------------------------
+.presentacion {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    background-color: $color-quinto;
+    background-position: center;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 400px);
+
+    .p1 {
+        grid-column: 2/4;
+        grid-row: 2/4;
+        //diseño
+        width: 300px;
+        height: 300px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding: 30px;
+        margin: 10px;
+        background-color: #ff6542e5;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p2 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+        //diseño
+        width: 300px;
+        height: 300px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding: 30px;
+        margin-top: 50px;
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentacionTitulo {
+        grid-column: 5/8;
+        grid-row: 1/6;
+        margin-left: 20px;
+        padding-left: 15px;
+        //flex
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+
+        h2 {
+            font-size: 45px;
+            font-weight: bolder;
+            margin-bottom: 15px;
+        }
+
+        .p3 {
+            font-size: 25px;
+            font-weight: 200;
+            text-align: left;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .p4 {
+            font-size: 25px;
+            font-weight: 200;
+            text-align: left;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        button {
+            width: max-content;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: #ff6542ca;
+            color: white;
+            border: none;
+
+            &:hover {
+                background-color: $color-secundario;
+                color: $color-primario;
+                font-weight: 600;
             }
         }
     }
@@ -67,7 +169,7 @@
 .servicios {
     width: 100%;
     height: 120%;
-    background-color: #fbfbfb;
+    background-color: $color-quinto;
     color: black;
     padding: 5px;
     padding-bottom: 50px;
@@ -83,7 +185,7 @@
         font-size: 40px;
         font-weight: 900;
         padding: 20px;
-        background-color: #fbfbfb;
+        background-color: $color-quinto;
         text-align: center;
         display: flex;
         flex-direction: row;
@@ -173,104 +275,151 @@
     }
 }
 
-
-//!PRESENTACION-------------------------------------
-.presentacion {
+//EXPERIENCIAS-------------------------------------
+//!BOOTSTRAP/
+.experiencias {
     width: 100%;
     height: 100%;
-    padding-top: 50px;
-    background-color: #fbfbfb;
-    background-position: center;
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 400px);
 
-    .p1 {
-        grid-column: 2/4;
-        grid-row: 2/4;
-        //diseño
-        width: 300px;
-        height: 300px;
-        font-size: 20px;
-        font-weight: 400;
-        text-align: left;
-        padding: 30px;
-        margin: 10px;
-        background-color: #ff6542e5;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .p2 {
-        grid-column: 3/5;
-        grid-row: 1/2;
-        //diseño
-        width: 300px;
-        height: 300px;
-        font-size: 20px;
-        font-weight: 400;
-        text-align: left;
-        padding: 30px;
-        margin-top: 50px;
-        background-color: white;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .presentacionTitulo {
-        grid-column: 5/8;
-        grid-row: 1/6;
-        margin-left: 20px;
-        padding-left: 15px;
-        //flex
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px;
-
+    div {
         h2 {
-            font-size: 45px;
-            font-weight: bolder;
-            margin-bottom: 15px;
+            font-size: 35px;
+            font-weight: 900;
+            background-color: #fbfbfb;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
+    }
 
-        .p3 {
-            font-size: 25px;
-            font-weight: 200;
-            text-align: left;
-            padding: 5px;
-            margin-top: 10px;
+    div {
+        .carousel-inner {
+            width: 100%;
+            height: 100%;
+
+            div {
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
         }
+    }
+}
 
-        .p4 {
-            font-size: 25px;
-            font-weight: 200;
-            text-align: left;
-            padding: 5px;
-            margin-top: 10px;
-        }
+//FORMULARIO-------------------------------------
+.formulario {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 
-        button {
-            width: max-content;
+    h2 {
+        width: 100%;
+        height: 100%;
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    h3 {
+        width: 100%;
+        font-size: 25px;
+        color: $color-primario;
+        text-align: center;
+    }
+
+    .cuerpoformulario {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        form {
+            width: 100%;
+            height: 30%;
             padding: 10px;
-            margin-top: 10px;
-            font-size: 14px;
-            font-weight: 600;
-            background-color: #ff6542ca;
-            color: white;
-            border: none;
 
-            &:hover {
-                background-color: #ffc759;
-                color: #ff6542;
-                font-weight: 600;
+            ul {
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+
+                li {
+                    width: 50%;
+
+                    div {
+                        input {
+                            font-size: 12px;
+                        }
+
+                        textarea {
+                            font-size: 14px;
+                        }
+
+                        button {
+                            width: 100%;
+                            background-color: $color-primario;
+                            border: none;
+
+                            &:hover {
+                                background-color: #fa9a84;
+                            }
+
+                            input {
+                                width: max-content;
+                                height: max-content;
+                                background-color: $color-primario;
+                                border: none;
+                                color: white;
+                                font-size: 16px;
+                                font-weight: 600;
+                                letter-spacing: 1px;
+
+                                &:hover {
+                                    background-color: #fa9a84;
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        width: 50%;
+        height: 40%;
+    }
+}
+
+//BOTON WSP-------------------------------------
+//! Boton de WSP fijo
+.botonWsp {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+
+    button {
+        border: none;
+        background-color: transparent;
+
+        i {
+            color: $color-primario;
+            font-size: 55px;
+            &:hover{
+                color: $color-secundario;
             }
         }
     }

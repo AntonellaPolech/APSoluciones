@@ -1,10 +1,12 @@
 //!HEADER ------------------------
+
+
 header nav {
     height: 100%;
     width: 100%;
     padding: 5px;
     margin: 0px;
-    background-color: #fbfbfb;
+    background-color: $color-quinto;
     color: white;
     /*GRID*/
     display: grid;
@@ -61,12 +63,12 @@ div {
                 text-decoration: none;
 
                 &:hover {
-                    color: #ff6542;
+                    color: $color-primario;
                 }
 
                 /*"inicio" con diferente color*/
                 .resaltador {
-                    color: #FF6542;
+                    color: $color-primario;
                     font-size: 17px;
                     font-weight: 600;
                 }
@@ -78,7 +80,7 @@ div {
             padding: 10px 15px 10px 15px;
             font-size: 16px;
             font-weight: 900;
-            background-color: #ff6542d0;
+            background-color: $color-primario;
             color: white;
             border: none;
             margin-left: 5px;
