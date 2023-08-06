@@ -13,7 +13,9 @@
     <title>AP Soluciones Contables</title>
     <link rel="shortcut icon" href="./img/AP-favicon.png">
     <link rel="stylesheet" href="./css/estilos.css">
-    <!------AGREGO ICONS----------->
+    <!--ANIMACIONES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <!---------------------------BODY------------------------->
@@ -59,20 +61,21 @@
         <section class="hero">
             <div>
                 <div class="heroTexto">
-                    <h1>Soluciones contables</h1>
-                    <h2>para tu emprendimiento</h2>
-                    <button>TRABAJEMOS JUNTOS</button>
+                    <h1 class="animate__animated animate__fadeInTopLeft">Soluciones contables</h1>
+                    <h2 class="animate__animated animate__fadeInBottomRight">para tu emprendimiento</h2>
+                    <button class="animate__animated animate__bounceInUp">TRABAJEMOS JUNTOS</button>
                 </div>
             </div>
         </section>
     </main>
     <!---------------SECTION 2:Presentación---------------------->
     <section class="presentacion">
-        <p class="p1">No somos un estudio contable tradicional, somos un socio estratégico que entiende tu negocio.
+        <p class="p1">
+            No somos un estudio contable tradicional, somos un socio estratégico que entiende tu negocio.
         </p>
         <P class="p2">Como laboratorio que somos, de lo que no sepamos, lo vamos a investigar para aprender.</P>
 
-        <div class="presentacionTitulo">
+        <div class="presentacionTitulo" data-aos="fade-right">
             <H2>Trabajamos con los clientes, mano a mano, día a día</H2>
             <p class="p3">AP Soluciones fusiona el conocimiento técnico y profesional de un estudio contable
                 tradicional, con la experiencia de emprender en Argentina.</p>
@@ -233,29 +236,29 @@
     </div>
     <!-------------------------SECTION 6:Footer--------------------->
     <footer>
-            <div class="footerLogo">
-                <img src="./img/logopng.png" alt="logofooter">
-                <button>
-                    <a href="https://www.instagram.com/" target="_blank">¡Seguinos!</a>
-                    <img src="./img/instagram.png" alt="instagram"></button>
-            </div>
-            <div class="footerNavegacion">
-                <h3>Navegación</h3>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/servicios.html">Servicios</a></li>
-                    <li><a href="./pages/trabajaconnosotros.html">Trabaja con nosotros</a></li>
-                </ul>
-            </div>
-            <div class="footerContactos">
-                <h3>Contáctanos</h3>
-                <ul>
-                    <li>(+54) 11 1234-5678</li>
-                    <li>info@apsoluciones.com</li>
-                    <li>Lun a Vie de 9 a 18hs.</li>
-                </ul>
-            </div>
+        <div class="footerLogo">
+            <img src="./img/logopng.png" alt="logofooter">
+            <button>
+                <a href="https://www.instagram.com/" target="_blank">¡Seguinos!</a>
+                <img src="./img/instagram.png" alt="instagram"></button>
+        </div>
+        <div class="footerNavegacion">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/trabajaconnosotros.html">Trabaja con nosotros</a></li>
+            </ul>
+        </div>
+        <div class="footerContactos">
+            <h3>Contáctanos</h3>
+            <ul>
+                <li>(+54) 11 1234-5678</li>
+                <li>info@apsoluciones.com</li>
+                <li>Lun a Vie de 9 a 18hs.</li>
+            </ul>
+        </div>
     </footer>
 
     <!-------------------------BOOTSTRAP----------------------->

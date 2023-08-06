@@ -27,7 +27,10 @@
                 font-size: nth($font-size, 4);
                 font-weight: 900;
                 color: nth($paleta-colores, 1);
+                //Animación
+                animation-duration: 2s;
             }
+
 
             h2 {
                 font-size: 40px;
@@ -38,6 +41,8 @@
                 justify-content: left;
                 align-items: center;
                 padding: 0px 0px 15px 0px;
+                //Animación
+                animation-duration: 2s;
             }
 
             button {
@@ -51,6 +56,13 @@
                 box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
                 -webkit-box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
                 -moz-box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
+                //transicion 
+                transition-property: background-color;
+                transition-duration: 0.5s;
+                transition: 0.8s;
+                //animación
+                animation-duration: 2s;
+
 
                 &:hover {
                     background-color: #ffc759;
@@ -91,6 +103,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        //transicion
+        transition: 0.5s ease-in;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 
     .p2 {
@@ -110,6 +128,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        //transicion
+        transition: 0.5s ease-in;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 
     .presentacionTitulo {
@@ -154,11 +178,16 @@
             background-color: nth($paleta-colores, 1);
             color: white;
             border: none;
+            //transicion 
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            transition: 0.5s ease-in-out;
 
             &:hover {
                 background-color: $color-secundario;
                 color: $color-primario;
                 font-weight: 600;
+                transform: translateY(-2px);
             }
         }
     }
@@ -201,9 +230,15 @@
         box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.32);
         -webkit-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.32);
         -moz-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.32);
+        //transicion 
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition: 0.5s ease-out;
 
         &:hover {
             background-color: #ffc859aa;
+            transform: translateY(-2px);
         }
 
         img {
@@ -231,6 +266,9 @@
             background-color: #ff6542de;
             color: white;
             border: none;
+            //transicion 
+            transition-property: background-color;
+            transition-duration: 0.3s;
 
             &:hover {
                 background-color: #607196;
@@ -357,23 +395,31 @@
                             width: 100%;
                             background-color: $color-primario;
                             border: none;
+                            //transicion 
+                            transition-property: background-color;
+                            transition-duration: 0.3s;
+
+                            transition: 0.8s ease-out;
 
                             &:hover {
                                 background-color: #fa9a84;
+                                transform: translateY(-2px);
                             }
 
                             input {
                                 width: max-content;
                                 height: max-content;
-                                background-color: $color-primario;
+                                background-color: transparent;
                                 border: none;
                                 color: white;
                                 font-size: 16px;
                                 font-weight: 600;
                                 letter-spacing: 1px;
+                                //transicion 
+                                transition-property: color;
+                                transition-duration: 0.3s;
 
                                 &:hover {
-                                    background-color: #fa9a84;
                                     color: black;
                                 }
                             }
@@ -407,6 +453,9 @@
         i {
             color: $color-primario;
             font-size: 55px;
+            //transicion 
+            transition-property: color;
+            transition-duration: 0.3s;
 
             &:hover {
                 color: $color-secundario;
@@ -421,7 +470,8 @@
     width: 100%;
     height: 100%;
     padding: 50px;
-    background-color: nth($paleta-colores, 3);
+    background: rgb(255, 199, 89);
+    background: radial-gradient(circle, rgba(255, 199, 89, 1) 0%, rgba(255, 101, 66, 1) 100%);
     color: white;
     @include flex(flex, row, space-between, center);
 

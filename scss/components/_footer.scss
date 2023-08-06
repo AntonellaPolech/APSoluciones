@@ -30,7 +30,12 @@ footer {
                 text-decoration: none;
                 color: black;
                 margin-right: 5px;
-                &:hover{
+                //transicion 
+                transition-property: color;
+                transition-duration: 0.3s;
+
+
+                &:hover {
                     color: $color-primario;
                 }
             }
@@ -64,10 +69,14 @@ footer {
                     font-size: 15px;
                     font-weight: 400;
                     text-decoration: none;
-                    &:hover{
+                    //transicion 
+                    transition-property: color;
+                    transition-duration: 0.3s;
+
+                    &:hover {
                         color: $color-primario;
                     }
-                    
+
                 }
             }
         }

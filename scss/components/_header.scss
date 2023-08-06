@@ -24,6 +24,10 @@ header nav {
 
 .headerLogo {
     @extend %flex;
+    transition: 0.8s;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 /*Elimino el margin y padding que hereda desde Bootstrap*/
@@ -50,6 +54,7 @@ div {
         text-align: center;
 
         li {
+
             a {
                 width: 100%;
                 height: 100%;
@@ -58,6 +63,9 @@ div {
                 font-weight: 600;
                 padding: 5px;
                 text-decoration: none;
+                //transicion 
+                transition-property: color;
+                transition-duration: 0.3s;
 
                 &:hover {
                     color: $color-primario;
@@ -84,9 +92,14 @@ div {
             box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
             -webkit-box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
             -moz-box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
+            //transicion 
+            transition-property: background-color;
+            transition-duration: 0.3s;
+            transition: 1s;
 
             &:hover {
                 background-color: #fa9a84;
+                transform: scale(1.1);
 
                 &:active {
                     color: black;
