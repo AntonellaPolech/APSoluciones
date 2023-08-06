@@ -45,3 +45,26 @@ $boton: (
     align-items: $align;
 }
 
+
+//* CONDICIONALES
+// == SON IGUALES
+// != SON DIFERENTES
+// > MAYOR QUE
+// < MENOR QUE
+// >= MAYOR O IGUAL
+// <= MENOR O IGUAL
+
+// * if(condicional) { → si esto se cumple, se va a ejecutar el codigo dentro de las llaves {}, si no se ejecuta el segundo.
+// if (condicional){
+//    codigo dentro de las llaves
+// }else{
+//    si no se ejecuta este otro codigo.
+// }
+
+@mixin modos ($modo){
+    @if $modo==black{
+        border: solid 2px blue;
+    }@else{
+        border: solid 2px red;
+    }
+}

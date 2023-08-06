@@ -418,6 +418,88 @@ div ul {
       .botonWsp button i:hover {
         color: #ffc859; }
 
+.heroNosotros {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: #607196;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .heroNosotros div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .heroNosotros div .turning {
+      font-family: 'Mulish', sans-serif;
+      font-size: 55px;
+      font-weight: 900;
+      color: black;
+      text-transform: capitalize;
+      text-align: center;
+      padding-bottom: 40px; }
+    .heroNosotros div .Turning2 {
+      width: 70%;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 400;
+      color: black; }
+      .heroNosotros div .Turning2 .nosotrosApSoluciones {
+        color: #fbfbfb;
+        font-style: inherit;
+        font-size: 25px;
+        font-weight: 900;
+        font-style: oblique; }
+
+.presentacionNosotros {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 30px; }
+  .presentacionNosotros div {
+    width: 100%;
+    height: max-content;
+    padding-left: 50px;
+    text-align: justify;
+    /*Boton:trabajemos juntos*/ }
+    .presentacionNosotros div .p1Nosotros {
+      width: 100%;
+      height: 50%;
+      padding: 15px;
+      font-size: 22px;
+      font-weight: 400; }
+    .presentacionNosotros div .p2Nosotros {
+      width: 100%;
+      height: 50%;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: 300; }
+    .presentacionNosotros div button {
+      width: max-content;
+      font-weight: 400;
+      padding: 10px 15px;
+      margin: 15px;
+      font-size: 14px;
+      background-color: #FF6542;
+      color: white;
+      border: none;
+      box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
+      -webkit-box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55);
+      -moz-box-shadow: 10px 6px 8px -4px rgba(0, 0, 0, 0.55); }
+  .presentacionNosotros .imgNosotros img {
+    width: 100%;
+    height: 100%; }
+
 footer {
   background-color: #607196b7;
   width: 100%;
@@ -440,12 +522,15 @@ footer {
       width: 100%;
       height: 100%;
       background-color: #c5c5c500;
-      color: white;
+      color: black;
       border: none;
       /*Icono seguinos*/ }
       footer .footerLogo button a {
         text-decoration: none;
-        color: black; }
+        color: black;
+        margin-right: 5px; }
+        footer .footerLogo button a:hover {
+          color: #ff6542; }
       footer .footerLogo button img {
         color: black;
         width: 20px;
@@ -464,23 +549,23 @@ footer {
       font-size: 15px;
       font-weight: 400;
       text-decoration: none; }
-  footer .footerContactos h3 {
-    padding-bottom: 5px;
-    font-size: 20px; }
-    footer .footerContactos h3 ul {
+      footer .footerNavegacion ul li a:hover {
+        color: #ff6542; }
+  footer .footerContactos {
+    height: 100%; }
+    footer .footerContactos h3 {
+      padding-bottom: 5px;
+      font-size: 20px; }
+    footer .footerContactos ul {
       line-height: 30px;
       padding: 0px;
       display: block;
       text-align: left; }
-      footer .footerContactos h3 ul li button {
-        background-color: transparent;
-        text-align: center;
-        border: none; }
-        footer .footerContactos h3 ul li button a {
-          text-decoration: none;
-          color: black;
-          font-size: 15px;
-          font-weight: 400; }
+      footer .footerContactos ul li {
+        color: black;
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration: none; }
 
 @media screen and (max-width: 950px) {
   .accesoContactos ul li a {
@@ -776,3 +861,28 @@ footer {
 @media print {
   .botonWsp {
     display: none; } }
+
+/*!MEDIA QUERIES*/
+@media screen and (max-width: 950px) {
+  .heroNosotros div .turning {
+    font-size: 35px;
+    padding: 10px; }
+  .heroNosotros div .Turning2 {
+    width: 70%;
+    font-size: 20px;
+    padding: 10px; }
+    .heroNosotros div .Turning2 .nosotrosApSoluciones {
+      font-size: 20px; } }
+
+@media screen and (max-width: 500px) {
+  .heroNosotros {
+    padding: 10px; }
+    .heroNosotros div .turning {
+      font-size: 25px;
+      padding-top: 10px; }
+    .heroNosotros div .Turning2 {
+      font-size: 18px;
+      width: 100%;
+      padding-top: 20px; }
+      .heroNosotros div .Turning2 .nosotrosApSoluciones {
+        font-size: 15px; } }

@@ -484,13 +484,68 @@
         }
     }
 }
+
 @media screen and (max-width:500px) {
     .botonWsp {
         visibility: hidden;
     }
 }
+
 @media print {
     .botonWsp {
         display: none;
+    }
+}
+
+
+//HTML NOSOTROS-------------------------------------------------------
+//HERO----------------------------------------------------------------
+/*!MEDIA QUERIES*/
+@media screen and (max-width:950px) {
+    .heroNosotros {
+
+        div {
+
+            .turning {
+                font-size: 35px;
+                padding: 10px;
+            }
+
+            .Turning2 {
+                width: 70%;
+                font-size: 20px;
+                padding: 10px;
+
+                .nosotrosApSoluciones {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .heroNosotros {
+        padding: 10px;
+
+        div {
+
+            .turning {
+
+                font-size: 25px;
+                padding-top: 10px;
+                ;
+            }
+
+            .Turning2 {
+                font-size: 18px;
+                width: 100%;
+                padding-top: 20px;
+
+                .nosotrosApSoluciones {
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }
