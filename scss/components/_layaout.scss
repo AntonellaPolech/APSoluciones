@@ -751,3 +751,51 @@
         height: 40%;
     }
 }
+
+//*HTML SUSCRIBETE----------------------------------------------/
+//*hero/
+.heroSuscribete {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+
+    .suscribeteDiv1 {
+        width: 100%;
+        height: 100%;
+        @include flex (flex, column, space-evenly, center);
+
+        h1 {
+            color: nth($paleta-colores, 1);
+            font-size: 50px;
+            font-weight: 600;
+            text-align: left;
+            padding-bottom: 25px;
+            padding-top: 25px;
+        }
+    }
+
+    .suscribeteDiv2 {
+        width: 100%;
+        height: 100%;
+        @include flex (flex, row, space-evenly, center);
+
+        h2 {
+            width: 75%;
+            color: black;
+            font-size: 25px;
+            font-weight: 200;
+            text-align: left;
+            padding: 45px;
+
+            .suscribeteApSoluciones {
+                color: #607196;
+                font-weight: 600;
+            }
+        }
+
+        img {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}

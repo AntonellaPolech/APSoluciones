@@ -678,6 +678,45 @@ div ul {
     width: 50%;
     height: 40%; }
 
+.heroSuscribete {
+  width: 100%;
+  height: 100%;
+  padding: 30px; }
+  .heroSuscribete .suscribeteDiv1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .heroSuscribete .suscribeteDiv1 h1 {
+      color: #ff6542;
+      font-size: 50px;
+      font-weight: 600;
+      text-align: left;
+      padding-bottom: 25px;
+      padding-top: 25px; }
+  .heroSuscribete .suscribeteDiv2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    .heroSuscribete .suscribeteDiv2 h2 {
+      width: 75%;
+      color: black;
+      font-size: 25px;
+      font-weight: 200;
+      text-align: left;
+      padding: 45px; }
+      .heroSuscribete .suscribeteDiv2 h2 .suscribeteApSoluciones {
+        color: #607196;
+        font-weight: 600; }
+    .heroSuscribete .suscribeteDiv2 img {
+      width: 50%;
+      height: 100%; }
+
 footer {
   background-color: #607196b7;
   width: 100%;
@@ -1044,6 +1083,19 @@ footer {
   .botonWsp {
     display: none; } }
 
+@media screen and (max-width: 600px) {
+  footer {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start; }
+  .footerNavegacion {
+    margin-top: 10px;
+    margin-bottom: 10px; } }
+
 /*!MEDIA QUERIES*/
 @media screen and (max-width: 950px) {
   .heroNosotros div .turning {
@@ -1068,3 +1120,27 @@ footer {
       padding-top: 20px; }
       .heroNosotros div .Turning2 .nosotrosApSoluciones {
         font-size: 15px; } }
+
+@media screen and (max-width: 950px) {
+  .heroSuscribete .suscribeteDiv1 h1 {
+    font-size: 25px;
+    padding: 10px; }
+  .heroSuscribete .suscribeteDiv2 h2 {
+    font-size: 18px; }
+    .heroSuscribete .suscribeteDiv2 h2 span {
+      font-size: 20px; } }
+
+@media screen and (max-width: 500px) {
+  .heroSuscribete .suscribeteDiv1 h1 {
+    font-size: 25px;
+    padding: 10px; }
+  .heroSuscribete .suscribeteDiv2 {
+    width: 100%; }
+    .heroSuscribete .suscribeteDiv2 h2 {
+      width: 100%;
+      font-size: 15px;
+      padding: 10px; }
+      .heroSuscribete .suscribeteDiv2 h2 span {
+        font-size: 20px; }
+    .heroSuscribete .suscribeteDiv2 img {
+      display: none; } }
