@@ -517,8 +517,7 @@
 
 
 //HTML NOSOTROS-------------------------------------------------------
-//HERO----------------------------------------------------------------
-/*!MEDIA QUERIES*/
+//HERO----------------------------------------
 @media screen and (max-width:950px) {
     .heroNosotros {
 
@@ -569,6 +568,35 @@
 }
 
 //HTML SERVICIOS-------------------------------------------------------
+@media screen and (max-width:950px) {
+    .heroServicios {
+
+        div{
+            .nosomos{
+                font-size: 30px;
+                padding: 10px;
+                span{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    .heroServicios {
+        padding: 0px;
+        div{
+            .nosomos{
+                font-size: 30px;
+                padding: 10px;
+                span{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
 
 //HTML SUSCRIPCION---------------------------------
 @media screen and (max-width:950px) {

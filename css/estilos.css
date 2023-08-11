@@ -1096,7 +1096,6 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px; } }
 
-/*!MEDIA QUERIES*/
 @media screen and (max-width: 950px) {
   .heroNosotros div .turning {
     font-size: 35px;
@@ -1120,6 +1119,22 @@ footer {
       padding-top: 20px; }
       .heroNosotros div .Turning2 .nosotrosApSoluciones {
         font-size: 15px; } }
+
+@media screen and (max-width: 950px) {
+  .heroServicios div .nosomos {
+    font-size: 30px;
+    padding: 10px; }
+    .heroServicios div .nosomos span {
+      font-size: 32px; } }
+
+@media screen and (max-width: 950px) {
+  .heroServicios {
+    padding: 0px; }
+    .heroServicios div .nosomos {
+      font-size: 30px;
+      padding: 10px; }
+      .heroServicios div .nosomos span {
+        font-size: 32px; } }
 
 @media screen and (max-width: 950px) {
   .heroSuscribete .suscribeteDiv1 h1 {
