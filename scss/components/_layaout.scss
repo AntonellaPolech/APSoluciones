@@ -225,7 +225,7 @@
         background-color: white;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: left;
         box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.32);
         -webkit-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.32);
@@ -566,5 +566,177 @@
             width: 100%;
             height: 100%;
         }
+    }
+}
+
+
+// HTML SERVICIOS ---------------------------------------------------
+//*HERO/
+.heroServicios {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background: nth($paleta-colores, 5);
+    color: white;
+    @include flex(flex, row, space-between, center);
+
+    div {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .nosomos {
+            font-family: 'Mulish', sans-serif;
+            font-size: 50px;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+            padding-bottom: 40px;
+
+            .socioEstrategico {
+                color: nth($paleta-colores, 1);
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+//-----------------------HTML TRABAJA CON NOSOTROS
+//*hero/
+.heroTrabaja {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    background-position: center;
+    background-image: url("/img/equipodetrabajo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.871);
+
+        .trabajaconnosotros {
+            color: nth($paleta-colores, 1);
+            font-size: 65px;
+            font-weight: 600;
+        }
+
+        h2 {
+            color: nth($paleta-colores,5);
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+
+//*----------FORMULARIO TRABAJA CON NOSOTROS-------/
+.formularioTrabaja {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    h2 {
+        width: 100%;
+        height: 100%;
+        font-size: 35px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 10px;
+        padding: 10px 30px 5px 30px;
+    }
+
+    h3 {
+        width: 100%;
+        font-size: 25px;
+        color: $color-primario;
+        text-align: center;
+    }
+
+    .cuerpoformulario {
+        width: 100%;
+        height: 100%;
+        @include flex (flex, row, space-evenly, center);
+
+        form {
+            width: 100%;
+            height: 30%;
+            padding: 10px;
+
+            ul {
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+                @include flex (flex, column, start, center);
+
+                li {
+                    width: 50%;
+
+                    div {
+                        input {
+                            font-size: 12px;
+                            &:hover{
+                                border: solid 1px black;
+                            }
+                        }
+
+                        textarea {
+                            font-size: 14px;
+                            &:hover{
+                                border: solid 1px black;
+                        }
+                    }
+                        button {
+                            width: 100%;
+                            background-color: $color-primario;
+                            border: none;
+                            //transicion 
+                            transition-property: background-color;
+                            transition-duration: 0.3s;
+
+                            transition: 0.8s ease-out;
+
+                            &:hover {
+                                background-color: #fa9a84;
+                                transform: translateY(-2px);
+                            }
+
+                            input {
+                                width: max-content;
+                                height: max-content;
+                                background-color: transparent;
+                                border: none;
+                                color: white;
+                                font-size: 16px;
+                                font-weight: 600;
+                                letter-spacing: 1px;
+                                //transicion 
+                                transition-property: color;
+                                transition-duration: 0.3s;
+
+                                &:hover {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        width: 50%;
+        height: 40%;
     }
 }

@@ -307,7 +307,7 @@ div ul {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: left;
     box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.32);
     -webkit-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.32);
@@ -546,6 +546,133 @@ div ul {
   .presentacionNosotros .imgNosotros img {
     width: 100%;
     height: 100%; }
+
+.heroServicios {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background: #fbfbfb;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .heroServicios div {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .heroServicios div .nosomos {
+      font-family: 'Mulish', sans-serif;
+      font-size: 50px;
+      font-weight: 600;
+      color: black;
+      text-align: center;
+      padding-bottom: 40px; }
+      .heroServicios div .nosomos .socioEstrategico {
+        color: #ff6542;
+        font-weight: 900; }
+
+.heroTrabaja {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  background-position: center;
+  background-image: url("/img/equipodetrabajo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll; }
+  .heroTrabaja div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.871); }
+    .heroTrabaja div .trabajaconnosotros {
+      color: #ff6542;
+      font-size: 65px;
+      font-weight: 600; }
+    .heroTrabaja div h2 {
+      color: #fbfbfb;
+      font-size: 20px;
+      font-weight: 600; }
+
+.formularioTrabaja {
+  width: 100%;
+  height: 100%;
+  padding: 10px; }
+  .formularioTrabaja h2 {
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+    padding: 10px 30px 5px 30px; }
+  .formularioTrabaja h3 {
+    width: 100%;
+    font-size: 25px;
+    color: #ff6542;
+    text-align: center; }
+  .formularioTrabaja .cuerpoformulario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    .formularioTrabaja .cuerpoformulario form {
+      width: 100%;
+      height: 30%;
+      padding: 10px; }
+      .formularioTrabaja .cuerpoformulario form ul {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center; }
+        .formularioTrabaja .cuerpoformulario form ul li {
+          width: 50%; }
+          .formularioTrabaja .cuerpoformulario form ul li div input {
+            font-size: 12px; }
+            .formularioTrabaja .cuerpoformulario form ul li div input:hover {
+              border: solid 1px black; }
+          .formularioTrabaja .cuerpoformulario form ul li div textarea {
+            font-size: 14px; }
+            .formularioTrabaja .cuerpoformulario form ul li div textarea:hover {
+              border: solid 1px black; }
+          .formularioTrabaja .cuerpoformulario form ul li div button {
+            width: 100%;
+            background-color: #ff6542;
+            border: none;
+            transition-property: background-color;
+            transition-duration: 0.3s;
+            transition: 0.8s ease-out; }
+            .formularioTrabaja .cuerpoformulario form ul li div button:hover {
+              background-color: #fa9a84;
+              transform: translateY(-2px); }
+            .formularioTrabaja .cuerpoformulario form ul li div button input {
+              width: max-content;
+              height: max-content;
+              background-color: transparent;
+              border: none;
+              color: white;
+              font-size: 16px;
+              font-weight: 600;
+              letter-spacing: 1px;
+              transition-property: color;
+              transition-duration: 0.3s; }
+              .formularioTrabaja .cuerpoformulario form ul li div button input:hover {
+                color: black; }
+  .formularioTrabaja img {
+    width: 50%;
+    height: 40%; }
 
 footer {
   background-color: #607196b7;
