@@ -417,8 +417,12 @@ div ul {
           width: 50%; }
           .formulario .cuerpoformulario form ul li div input {
             font-size: 12px; }
+            .formulario .cuerpoformulario form ul li div input:hover {
+              border: solid 1px black; }
           .formulario .cuerpoformulario form ul li div textarea {
             font-size: 14px; }
+            .formulario .cuerpoformulario form ul li div textarea:hover {
+              border: solid 1px black; }
           .formulario .cuerpoformulario form ul li div button {
             width: 100%;
             background-color: #ff6542;

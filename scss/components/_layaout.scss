@@ -385,10 +385,18 @@
                     div {
                         input {
                             font-size: 12px;
+
+                            &:hover {
+                                border: solid 1px black;
+                            }
                         }
 
                         textarea {
                             font-size: 14px;
+
+                            &:hover {
+                                border: solid 1px black;
+                            }
                         }
 
                         button {
@@ -632,7 +640,7 @@
         }
 
         h2 {
-            color: nth($paleta-colores,5);
+            color: nth($paleta-colores, 5);
             font-size: 20px;
             font-weight: 600;
         }
@@ -685,17 +693,20 @@
                     div {
                         input {
                             font-size: 12px;
-                            &:hover{
+
+                            &:hover {
                                 border: solid 1px black;
                             }
                         }
 
                         textarea {
                             font-size: 14px;
-                            &:hover{
+
+                            &:hover {
                                 border: solid 1px black;
+                            }
                         }
-                    }
+
                         button {
                             width: 100%;
                             background-color: $color-primario;
