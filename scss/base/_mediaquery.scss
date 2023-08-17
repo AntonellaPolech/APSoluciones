@@ -45,8 +45,7 @@
     }
 }
 
-
-@media screen and (max-width:550px) {
+@media screen and (max-width:650px) {
     .header {
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: 1fr;
@@ -81,6 +80,40 @@
                     font-size: 10px;
                     font-weight: 400;
                     margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .headerLogo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+        }
+
+        .headerBarra {
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                padding-left: 20px;
+
+                li {
+                    a {
+                        font-size: 9px;
+                        font-weight: 600;
+                        padding-bottom: 10px;
+                    }
                 }
             }
         }
@@ -522,9 +555,8 @@
     .heroNosotros {
 
         div {
-
             .turning {
-                font-size: 35px;
+                font-size: 50px;
                 padding: 10px;
             }
 
@@ -567,15 +599,66 @@
     }
 }
 
+//SECCION INTRODUCCION
+@media screen and (max-width:850px) {
+    .presentacionNosotros {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .presentacionNosotros {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+
+            .p1Nosotros {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .p2Nosotros {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .imgNosotros {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
 //HTML SERVICIOS-------------------------------------------------------
 @media screen and (max-width:950px) {
     .heroServicios {
 
-        div{
-            .nosomos{
+        div {
+            .nosomos {
                 font-size: 30px;
                 padding: 10px;
-                span{
+
+                span {
                     font-size: 32px;
                 }
             }
@@ -586,11 +669,13 @@
 @media screen and (max-width:950px) {
     .heroServicios {
         padding: 0px;
-        div{
-            .nosomos{
+
+        div {
+            .nosomos {
                 font-size: 30px;
                 padding: 10px;
-                span{
+
+                span {
                     font-size: 32px;
                 }
             }
@@ -612,6 +697,7 @@
         .suscribeteDiv2 {
             h2 {
                 font-size: 18px;
+
                 span {
                     font-size: 20px;
                 }
@@ -632,15 +718,18 @@
 
         .suscribeteDiv2 {
             width: 100%;
+
             h2 {
                 width: 100%;
                 font-size: 15px;
                 padding: 10px;
+
                 span {
                     font-size: 20px;
                 }
             }
-            img{
+
+            img {
                 display: none;
             }
         }
@@ -648,4 +737,63 @@
 }
 
 
-//HTML TRABAJA CON NOSOTROS-------------------------------------------------------
+//HTML TRABAJA CON NOSOTROS------------------------------
+@media screen and (max-width:950px) {
+.heroTrabaja{
+    div{
+        padding: 20px;
+        .trabajaconnosotros{
+            font-size: 45px;
+        }
+        h2{
+            font-size: 20px;
+            text-align: center;
+            padding: 30px;
+        }
+    }
+}
+
+.formularioTrabaja{
+    h2{
+        font-size: 30px;
+        padding: 20px;
+    }
+    h3{
+        font-size: 20px;
+        padding: 20px;
+    }
+    img{
+        display: none;
+    }
+    padding-bottom: 50px;
+}
+}
+@media screen and (max-width:550px) {
+    .heroTrabaja{
+        div{
+            padding: 20px;
+            .trabajaconnosotros{
+                font-size: 28px;
+            }
+            h2{
+                font-size: 18px;
+                text-align: center;
+                padding: 30px;
+            }
+        }
+    }
+    
+    .formularioTrabaja{
+        h2{
+            font-size: 18px;
+            padding: 20px;
+        }
+        h3{
+            font-size: 15px;
+            padding: 20px;
+        }
+        img{
+            display: none;
+        }
+    }
+    }
